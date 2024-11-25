@@ -1,0 +1,30 @@
+bed_window: 95, 100
+
+Alignment:
+e = end
+
+forward:
+     95      99
+C |  C C A T T      3'      ref_seq
+C |  C C A T T  ...         read5, alignment1
+
+reverse:
+G |  G G T A A      5'      reverse_complement_ref_seq
+G |  G G T A e              read0, alignment2
+G |  G G e                  read3, alignment2
+
+Transition matrix:
+forward:
+[0, 0, 0, 0, 0],
+[1, 1, 1, 1, 1],
+[0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0],
+reverse:
+[0, 0, 0, 0, 0],
+[2, 2, 1, 1, 0],
+[0, 0, 1, 0, 1], 
+[0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0]

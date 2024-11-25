@@ -1,0 +1,15 @@
+bed_window: 120, 123
+
+forward:
+     120  122
+T |  G  A T      3'      ref_seq
+
+reverse:
+A |  C  T A      5'      reverse_complement_ref_seq
+
+Transition matrix:
+forward:
+no alignment, all zeros.
+
+reverse:
+no alignment, all zeros.
